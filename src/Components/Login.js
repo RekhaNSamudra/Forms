@@ -26,7 +26,7 @@ const Login = () => {
 
     return (
         <>
-            
+
             <div>
 
                 {login ? (
@@ -48,35 +48,35 @@ const Login = () => {
                     :
                     (
                         <>
-                        <h3>Login Form</h3>
-                        <form onSubmit={handleSubmit}>
-                            <input
-                                className={styles.inputBox}
-                                type='text'
-                                placeholder='UserName'
-                                value={username}
-                                onChange={(e) => setUsername(e.target.value)}
-                            />
-                            <br />
-                            <input
-                                className={styles.inputBox}
-                                type='password'
-                                placeholder='Password'
-                                value={password}
-                                onChange={(e) => setPassword(e.target.value)}
-                            />
-                            <br />
-                            <button
-                                className={`${styles.button} ${styles.login}`}
-                                type='submit'
-                            >
-                                Login
-                            </button>
-                            <p
-                                className={styles.error}>
-                                {error}
-                            </p>
-                        </form>
+                            <h3>Login Form</h3>
+                            <form onSubmit={handleSubmit}>
+                                <input
+                                    className={styles.inputBox}
+                                    type='text'
+                                    placeholder='UserName'
+                                    value={username}
+                                    onChange={(e) => setUsername(e.target.value)}
+                                />
+                                <br />
+                                <input
+                                    className={styles.inputBox}
+                                    type='password'
+                                    placeholder='Password'
+                                    value={password}
+                                    onChange={(e) => setPassword(e.target.value)}
+                                />
+                                <br />
+                                <button
+                                    className={`${styles.button} ${styles.login}`}
+                                    type='submit'
+                                >
+                                    Login
+                                </button>
+                                <p
+                                    className={styles.error}>
+                                    {error}
+                                </p>
+                            </form>
                         </>
                     )
                 }
