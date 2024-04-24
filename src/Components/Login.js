@@ -13,7 +13,7 @@ const Login = () => {
         setUsername("")
         setPassword("")
         try {
-            if (username === 'rekhaNSamudra' && password === 'h2w') {
+            if (username === 'RekhaNSamudra' && password === 'h2w') {
                 setLogIn(true)
             }
             else {
